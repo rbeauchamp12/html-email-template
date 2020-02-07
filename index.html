@@ -15,99 +15,182 @@
 
 
 <style>
+    /* Desktop */
+    @media only screen and (min-width: 960px){
+        .container{
+            width: 960px;
+        }
 
-@media only screen and (min-width: 960px){
-    .container{
-        width: 960px;
-    }
-
-    .header-left{
-        padding: 36px 15px 70px 15px !important;
-    }
-}
-
-@media only screen and (max-width: 960px){
-    .container{
-        width: 600px;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .container{
-        width: 100%;
-    }
-
-    .header-left{
-        width: 100%;
-    }
-
-    .header-right{
-        width: 100%;
-    }
+        .header-left{
+            padding: 36px 15px 70px 15px !important;
+        }
 
 
+        /* section 2: hero section begins */
+        .hero-table .left-column{
+            padding: 20px 50px !important;
+        }
 
-/* Section 2: lets you row  begins */
+        .hero-table .middle-column{
+            padding: 20px 50px !important;
+        }
 
-    .lets-you-row, 
-    .left-column{
-        width: 100%;
-    }
-
-    .lets-you-row, 
-    .middle-column{
-        width: 100%;
-    }
-
-    .lets-you-row, 
-    .right-column{
-        width: 100%;
-    }
-
-/* Section 2: lets you row ends */
-
-/* Section 3: advanced  ends */
-    .advance-table, 
-    .advance-img{
-        width: 100%;
-    }
-
-    .advance-table,
-    .left-column{
-        width: 100%;
-    }
-
-    .advance-table,
-    .right-column{
-        width: 100%;
-    }
-
-    .advance-table,
-    .left-column,
-    .google-icon{
-        width: 80% !important;
-        text-align: center !important;
-        margin: 0;
-
-    }
-
-    .advance-table,
-    .right-column,
-    .apple-icon{
+        .hero-table .right-column{
+            padding: 20px 50px !important;
+        }
         
-        width: 80% !important;
-        text-align: center !important;
-        margin: 0;
+        /* section 2: hero section ends  */
+
+        
+        /* section 3:advance section begins */
+        .advance-table .left-column{
+            padding: 20px 50px !important;
+        }
+
+        .advance-table .middle-column{
+            padding: 20px 50px !important;
+        }
+
+        .advance-table .right-column{
+            padding: 20px 50px !important;
+        }
+        
+        /* section 3: advance section ends  */
+
+
+        /* section 4: One solutions begins */
+        .one-solution-table img{
+           max-width: 611px;
+        }
+
+        .one-solution-table{
+            text-align: center;
+        }
+        
+        /* section 4: One solutions ends */
+
+        /*section 5: join together begins */
+
+        .join-table .left-column{
+            padding: 20px 50px !important;
+        }
+
+        .join-table .middle-column{
+            padding: 20px 50px !important;
+        }
+
+        .join-table .right-column{
+            padding: 20px 50px !important;
+        }
+        /* section 5: join together ends */
+    }
+
+    /* Tablet and midsize screens */
+    @media only screen and (max-width: 960px){
+        .container{
+            width: 600px;
+        }
+    }
+
+    /* Mobile and small screens */
+    @media only screen and (max-width: 600px){
+        /* section 1: header section begins */
+        .container{
+            width: 100%;
+        }
+
+        .header-left{
+            width: 100%;
+        }
+
+        .header-right{
+            width: 100%;
+        }
+
+        /* section 1: header-section ends*/
+
+    /* Section 2: Hero section begins */
+        .hero-table .left-column{
+            width: 100%;
+        }
+
+        .hero-table .middle-column{
+            width: 100%;
+        }
+
+        .hero-table .right-column{
+            width: 100%;
+        }
+            
+
+    /* Section 2: hero section ends */
+
+
+    /* Section 3: advanced  ends */
+        .advance-table .advance-img{
+            width: 100% !important;
+        }
+
+
+        .advance-table .left-column{
+            width: 100%;
+        }
+
+        .advance-table .right-column{
+            width: 100%;
+        }
+
+        .advance-table .left-column .google-icon{
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .advance-table .right-column .apple-icon{
+            width: 100%;
+            text-align: center;
+        }
+        
+        /* Section 3: advanced ends */
+
+        
+        /*section 5: join together begins */
+
+        .join-table .left-column{
+            width: 100%;
+            padding: 2px 50px !important;
+        }
+
+        .join-table .middle-column{
+            width: 100%;
+            padding: 20px 50px !important;
+        }
+
+        .join-table .right-column{
+            width: 100px;
+            padding: 20px 50px !important;
+        }
+        /* section 5: join together ends */
+
+        
+        /* Section 6: details section begins */
+        .details-table .one-row-table .left-column{
+            width: 100%;
+        }
+
+        .details-table .one-row-table .right-column{
+            width: 100%;
+        }
+
+
+        /*Section 6: details section ends */
     }
 
 
-    
 
 
 
-/* Section 3: advanced ends */
 
-}
 
 </style>
 
@@ -127,7 +210,7 @@
                     <tr>
                         <td>
                             <!-- ==================== left side begins: logo, message, CTA =================  -->
-                            <table class="header-left" width="50%" cellspacing="0" cellpadding="0" border="0" align="left" style="background: rgb(101,255,253); background: -moz-linear-gradient(-45deg, rgba(101,255,253,1) 1%, rgba(34,150,238,1) 100%); background: -webkit-linear-gradient(-45deg, rgba(101,255,253,1) 1%, rgba(34,150,238,1) 100%); background: linear-gradient(135deg, rgba(101,255,253,1)1%, rgba(34,150,238,1)100%); padding: 15px 15px 80px 15px;">
+                            <table class="header-left" width="50%" cellspacing="0" cellpadding="0" border="0" align="left" style="background: rgb(101,255,253); background: -moz-linear-gradient(-45deg, rgba(101,255,253,1) 1%, rgba(34,150,238,1) 100%); background: -webkit-linear-gradient(-45deg, rgba(101,255,253,1) 1%, rgba(34,150,238,1) 100%); background: linear-gradient(135deg, rgba(101,255,253,1)1%, rgba(34,150,238,1)100%); padding: 15px 15px 70px 15px;">
                                 <tr>
                                     <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; color: white;">
                                         <img src="./img/logos/h-logo.png" alt="" style="width: 100px;">
@@ -149,7 +232,7 @@
                                 <tr>
                                     <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; color: #212121;">
                                         <!--links table begins -->
-                                        <table class="menu" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="padding: 30px;">
+                                        <table class="menu-table" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="padding: 20px;">
 
                                             <!--link1-->
                                             <tr>
@@ -192,7 +275,7 @@
 
                      <!-- =============== content section 2: hero section begins =============== -->
                      <tr>
-                        <td class="hero-section lets-you-row" style="background-color: #fafafa;" align="center">
+                        <td class="hero-table" style="background-color: #fafafa;" align="center">
                             <h3 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; font-weight: 400; font-size: 24px; padding: 36px 0 5px 0; text-transform: capitalize;">Hero lets you...</h3>
 
                             <!--column 1: notify section begins-->
@@ -246,7 +329,7 @@
                                                     <img src="./img/logos/share-icon.png" alt="" width="12">
                                                 </td>
 
-                                                <td align="center" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; color: #212121; font-weight: 600; padding: 0 0 5px 25px; text-transform: uppercase; text-align: center;"> Share </td>
+                                                <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; color: #212121; font-weight: 600; padding: 0 0 5px 25px; text-transform: uppercase; text-align: center;"> Share </td>
                                             </tr>
                                         </table>
                                         <!--icon ends-->
@@ -277,7 +360,7 @@
                             <table class="right-column" width="33.33%" cellspacing="0" cellpadding="0" align="left" border="0" style="padding: 15px 15px 70px 15px;">
                                 <!--icon and text begins-->
                                 <tr>
-                                    <td>
+                                    <td align="center">
                                         <!--icon begins-->
                                         <table class="title-icon" width="33.33%" cellspacing="0" cellpadding="0" align="center" border="0" style="padding: 0;">
                                             <tr>
@@ -316,12 +399,13 @@
 
                      <!-- ==== content section 3: advanced row row begins ==== -->
                      <tr>
-                        <td class="let-you-row">
-                            <table class="advance-table" width="100%" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 50px; background: white;">
+                        <td>
+                            <table class="advance-table" width="100%" cellspacing="0" cellpadding="0" border="0" style="padding: 15px 15px 70px 15px; background: white;">
                                 <!-- newsletter image begins-->
                                 <tr>
-                                    <td >
-                                        <img class="advance-img" src="/img/news-image.png" alt="">
+                                    <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; font-weight: 300; font-size: 24px; padding: 36px 0 5px 0; text-transform: capitalize;" align="center">
+                                        <img class="advance-img" src="/img/news-image.png" alt="" width="100%">
+
                                     </td>
                                 </tr>
                                 <!-- newsletter image ends -->
@@ -337,40 +421,39 @@
                                 <!-- left column text begins-->
                                 <tr>
                                     <td>
-                                        <table class="left-column" width="50%" cellspacing="0" cellpadding="0" align="left" border="0" style="padding: 15px; background: white;">
+                                        <table class="left-column" width="50%" cellspacing="0" cellpadding="0" align="left" border="0" style="padding: 15px 15px 0 15px; background: white;">
                                             <!-- beginning of left column paragraph-->
                                             <tr>
                                                 <td>
-                                                    <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 25px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor obcaecati et veritatis tempora assumenda.</p>
+                                                    <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 30px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor obcaecati et veritatis tempora assumenda.</p>
                                                 </td>
                                             </tr>
                                             <!-- end of left column paragraph-->
         
                                             <!-- google play icon begins-->
                                             <tr>
-                                                <td align="right">
-                                                    <img src="/img/icons/google-icon.png" alt="" width="115" class="google-icon">
+                                                <td align="right" class="google-icon">
+                                                    <img src="/img/icons/google-icon.png" alt="" width="115">
                                                 </td>
                                             </tr>
                                             <!-- google play icon begins-->
                                         </table>
-                                            
                                         <!-- left column text ends-->
 
                                          <!-- right column text begins-->
-                                        <table class="right-column" width="50%" cellspacing="0" cellpadding="0" align="left" border="0" style="padding: 15px; background: white;">
+                                        <table class="right-column" width="50%" cellspacing="0" cellpadding="0" align="left" border="0" style="padding: 15px 15px 0 15px; background: white;">
                                             <!-- beginning of left column paragraph-->
                                             <tr>
                                                 <td>
-                                                    <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 25px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor obcaecati et veritatis tempora assumenda.</p>
+                                                    <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; color: #7f8887; font-weight: 400; line-height: 1.8; font-size: 14px; padding: 0 0 30px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor obcaecati et veritatis tempora assumenda.</p>
                                                 </td>
                                             </tr>
                                             <!-- end of left column paragraph-->
         
                                             <!-- google play icon begins-->
                                             <tr>
-                                                <td align="left">
-                                                    <img src="/img/icons/apple-icon.png" alt="" width="115" class="apple-icon">
+                                                <td align="left" class="apple-icon">
+                                                    <img src="/img/icons/apple-icon.png" alt="" width="115">
                                                 </td>
                                             </tr>
                                             <!-- google play icon begins-->
@@ -388,10 +471,10 @@
                      <!-- ==== content section 4: One Solution section begins ==== -->
                      <tr>
                         <td>
-                            <table class="one-solution-table" width="100%" cellspacing="0" cellpadding="0" border="0" style="padding: 10px 30px; background: #212121;">
+                            <table class="one-solution-table" width="100%" cellspacing="0" cellpadding="0" border="0" style="padding: 0; background: black;">
                                 <tr>
-                                    <td style="padding: 10px 30px;">
-                                        <img src="/img/icons/circle-icons.png" alt="">
+                                    <td align="center">
+                                        <img src="/img/circle-icons.png" alt="">
                                     </td>
                                 </tr>
                             </table>
@@ -561,7 +644,12 @@
                                                     </table><!-- end of right column table -->
                                                     <!--  ======== end of Responsive Layout and Retina Ready sections ======== -->
 
-                                                    <!-- ===== Start of Responsive Layout and Retina Ready sections ======== -->
+
+
+
+
+                                                    
+                                                    <!-- ===== Start of Various Skins and Great Performance sections ======== -->
                                                     <!-- start of left column -->
                                                     <table class="left-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 15px 20px;"> <!-- start of column table-->
                                                         <tr>
@@ -610,9 +698,10 @@
 
 
 
-                                                    <!-- ===== Start of Responsive Layout and Retina Ready sections ======== -->
+                                                    <!-- ===== Start of user friendly and social share sections ======== -->
+                                                
                                                     <!-- start of left column -->
-                                                    <table class="left-column width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 15px 20px;"> <!-- start of column table-->
+                                                    <table class="left-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 15px 20px;"> <!-- start of column table-->
                                                         <tr>
                                                             <td>
                                                                 <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"> <!-- start of icon table-->
@@ -620,7 +709,7 @@
                                                                         <img src="/img/icons/bar-icon.png" alt="" width="32">
                                                                     </td>
 
-                                                                     <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; color: #212121; font-weight: 600; text-transform: uppercase; font-size: 16px; padding: 0 0 0 15px;">
+                                                                    <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; color: #212121; font-weight: 600; text-transform: uppercase; font-size: 16px; padding: 0 0 0 15px;">
                                                                         User Friendly Menus
                                                                     </td>
                                                                 </table> <!-- end of icon-table -->
@@ -631,7 +720,7 @@
                                                                 </tr>
                                                             </td>
                                                         </tr>
-                                                    </table><!-- end of left table -->
+                                                    </table><!-- end of left column table -->
 
                                                     <!-- start of right column -->
 
@@ -643,7 +732,7 @@
                                                                         <img src="/img/icons/share-icon.png" alt="" width="32">
                                                                     </td>
 
-                                                                     <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; color: #212121; font-weight: 600; text-transform: uppercase; font-size: 16px; padding: 0 0 0 15px;">
+                                                                    <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; color: #212121; font-weight: 600; text-transform: uppercase; font-size: 16px; padding: 0 0 0 15px;">
                                                                         Social Share
                                                                     </td>
                                                                 </table> <!-- end of icon-table -->
@@ -656,7 +745,6 @@
                                                         </tr>
                                                     </table><!-- end of right column -->
                                                     <!--  ======== end of Userfriendly and social share sections ======== -->
-
                                                 </td>
                                             </tr>
                                         </table> <!-- end of row table -->
