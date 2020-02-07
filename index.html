@@ -12,6 +12,109 @@
 
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+
+
+<style>
+
+@media only screen and (min-width: 960px){
+    .container{
+        width: 960px;
+    }
+
+    .header-left{
+        padding: 36px 15px 70px 15px !important;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .container{
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+
+    .header-left{
+        width: 100%;
+    }
+
+    .header-right{
+        width: 100%;
+    }
+
+
+
+/* Section 2: lets you row  begins */
+
+    .lets-you-row, 
+    .left-column{
+        width: 100%;
+    }
+
+    .lets-you-row, 
+    .middle-column{
+        width: 100%;
+    }
+
+    .lets-you-row, 
+    .right-column{
+        width: 100%;
+    }
+
+/* Section 2: lets you row ends */
+
+/* Section 3: advanced  ends */
+    .advance-table, 
+    .advance-img{
+        width: 100%;
+    }
+
+    .advance-table,
+    .left-column{
+        width: 100%;
+    }
+
+    .advance-table,
+    .right-column{
+        width: 100%;
+    }
+
+    .advance-table,
+    .left-column,
+    .google-icon{
+        width: 80% !important;
+        text-align: center !important;
+        margin: 0;
+
+    }
+
+    .advance-table,
+    .right-column,
+    .apple-icon{
+        
+        width: 80% !important;
+        text-align: center !important;
+        margin: 0;
+    }
+
+
+    
+
+
+
+/* Section 3: advanced ends */
+
+}
+
+</style>
+
+
+
+
+
 </head>
 <body>
     <!-- outer table: start of html email-->
@@ -46,7 +149,7 @@
                                 <tr>
                                     <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; color: #212121;">
                                         <!--links table begins -->
-                                        <table class="container" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="padding: 30px;">
+                                        <table class="menu" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="padding: 30px;">
 
                                             <!--link1-->
                                             <tr>
@@ -89,7 +192,7 @@
 
                      <!-- =============== content section 2: hero section begins =============== -->
                      <tr>
-                        <td class="hero-section" style="background-color: #fafafa;" align="center">
+                        <td class="hero-section lets-you-row" style="background-color: #fafafa;" align="center">
                             <h3 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetiva, Arial, 'Lucida Grande',sans-serif; font-weight: 400; font-size: 24px; padding: 36px 0 5px 0; text-transform: capitalize;">Hero lets you...</h3>
 
                             <!--column 1: notify section begins-->
@@ -209,16 +312,16 @@
                             <!--column 3: connect section ends -->
                         </td>
                     </tr>
-                    <!-- =============== content section 2: hero sectio ends ================ -->
+                    <!-- =============== content section 2: hero section ends ================ -->
 
                      <!-- ==== content section 3: advanced row row begins ==== -->
                      <tr>
-                        <td>
+                        <td class="let-you-row">
                             <table class="advance-table" width="100%" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 50px; background: white;">
                                 <!-- newsletter image begins-->
                                 <tr>
                                     <td >
-                                        <img src="/img/news-image.png" alt="">
+                                        <img class="advance-img" src="/img/news-image.png" alt="">
                                     </td>
                                 </tr>
                                 <!-- newsletter image ends -->
@@ -246,7 +349,7 @@
                                             <!-- google play icon begins-->
                                             <tr>
                                                 <td align="right">
-                                                    <img src="/img/icons/google-icon.png" alt="" width="115">
+                                                    <img src="/img/icons/google-icon.png" alt="" width="115" class="google-icon">
                                                 </td>
                                             </tr>
                                             <!-- google play icon begins-->
@@ -267,7 +370,7 @@
                                             <!-- google play icon begins-->
                                             <tr>
                                                 <td align="left">
-                                                    <img src="/img/icons/apple-icon.png" alt="" width="115">
+                                                    <img src="/img/icons/apple-icon.png" alt="" width="115" class="apple-icon">
                                                 </td>
                                             </tr>
                                             <!-- google play icon begins-->
